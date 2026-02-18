@@ -1,0 +1,2 @@
+docker build -t yourdockerhub/devops-k8s-project .
+docker push yourdockerhub/devops-k8s-project
