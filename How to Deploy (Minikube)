@@ -1,0 +1,21 @@
+How to Deploy (Minikube)
+
+Start Minikube:
+
+minikube start
+
+
+Apply configs:
+
+kubectl apply -f namespace.yaml
+kubectl apply -f deployment.yaml
+kubectl apply -f service.yaml
+
+Check pods:
+
+kubectl get pods -n devops
+
+
+Access app:
+
+minikube service flask-service -n devops
